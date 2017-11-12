@@ -1,5 +1,5 @@
 import csv
-reader = csv.reader(open("temp_sample.csv"))
+reader = csv.reader(open("/home/saumya/Downloads/temps_out.csv"))
 for row in reader:
    final_time=""
    final_date=""
@@ -16,7 +16,7 @@ for row in reader:
 
    final_field=final_field+final_date+final_time
 
-   with open('temp_sample_out.csv', 'ab') as csvfile:
+   with open('temps_out.csv', 'ab') as csvfile:
     spamwriter = csv.writer(csvfile, delimiter=',',
                             quotechar='|', quoting=csv.QUOTE_MINIMAL)
     spamwriter.writerow([final_field,rain])

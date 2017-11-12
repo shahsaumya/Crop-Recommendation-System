@@ -1,3 +1,4 @@
+
 import matplotlib.pyplot as plt
 import csv
 import numpy as np
@@ -5,10 +6,12 @@ import numpy as np
 X = []
 y = []
 
-reader = csv.reader(open("temp_sample_1.csv"))
+
+reader = csv.reader(open("hums_out.csvunix.csv"))
+
 for row in reader:
-	X.append(row[0])
-	y.append(row[1])
+    X.append(row[0])
+    y.append(row[1])
 
 lw = 2
 plt.scatter(X, y, color='darkorange', label='data')
