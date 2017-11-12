@@ -5,7 +5,7 @@ import numpy as np
 X = []
 y = []
 
-reader = csv.reader(open("temp_sample.csv"))
+reader = csv.reader(open("temp_sample_1.csv"))
 for row in reader:
 	X.append(row[0])
 	y.append(row[1])
